@@ -5,7 +5,7 @@ I didn't want to follow the hype of whatever JavaScript framework is popular rig
 
 ## Browser as a Framework
 [Daniel Falbo](https://www.github.com/danielfalbo), introduced me to a very cool and surely **out of the box** mentality.
-Even if it is a small reading, it has changed how view things in web. So my huge thanks to him for that!
+Even if it is a small reading, it has changed how I view things in web. So my huge thanks to him for that!
 
 Here's a link to the article: https://html3000.dev
 
