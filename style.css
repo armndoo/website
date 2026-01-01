@@ -4,13 +4,20 @@ html {
         system-ui,
         -apple-system,
         sans-serif;
-    background-color: #57595b;
+    color: black;
+    background-color: #466060;
+    display: flex;
+    flex-direction: columns;
+    align-items: center;
+    justify-content: center;
 }
 body {
+    width: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 10px;
     gap: 3rem;
     margin-top: 3rem;
 }
@@ -51,6 +58,10 @@ a:hover {
 }
 *[p-3] {
     padding: clamp(1.5rem, 6vw, 3rem);
+}
+
+*[gap-05] {
+    gap: 0.5rem;
 }
 *[gap-1] {
     gap: 1rem;
@@ -113,6 +124,11 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
+*[between] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 *[right] {
     display: flex;
     justify-content: flex-end;
@@ -126,24 +142,45 @@ a:hover {
 *[font-bold] {
     font-weight: 700;
 }
+*[font-semibold] {
+    font-weight: 600;
+}
 *[font-medium] {
     font-weight: 500;
 }
 *[font-light] {
+    font-weight: 300;
+}
+*[font-lighter] {
     font-weight: 100;
 }
 *[white] {
     color: whitesmoke;
 }
+
 /*Specific Styling*/
+
 .profile-pic {
     width: 3rem;
 }
+
 .divider {
     align-self: stretch;
     width: 1px;
+    opacity: 0.3;
     background-color: black;
 }
+
 about-me {
     align-items: stretch;
+}
+
+projects-experience {
+    margin-left: 1rem;
+}
+heading-experience {
+    font-size: 1.5rem;
+}
+roles-mcita {
+    margin-bottom: 10px;
 }
