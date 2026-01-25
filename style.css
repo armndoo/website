@@ -226,7 +226,8 @@ projects-experience {
     box-sizing: border-box;
 }
 
-heading-experience {
+heading-experience,
+heading-projects {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
@@ -239,7 +240,10 @@ heading-experience svg {
     vertical-align: middle;
     margin-bottom: 2px;
 }
-
+heading-projects svg {
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
 .icon {
     height: 30px;
     width: 30px;
@@ -251,9 +255,50 @@ desc-mcita {
     display: block;
     width: 30ch;
 }
+
 .surface {
     background-color: #a19b91;
     border: 2px solid #000000;
     padding: 2rem;
     box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.8);
+}
+about-me {
+    width: fit-content;
+}
+
+@media (max-width: 850px) {
+    body {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    *[horizontal] {
+        flex-wrap: wrap;
+    }
+
+    *[w-10],
+    *[w-20],
+    *[w-30],
+    *[w-40],
+    *[w-50],
+    *[w-60],
+    *[w-70],
+    *[w-80],
+    *[w-90] {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    about-me,
+    projects-experience,
+    .surface {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    desc-mcita {
+        width: 100%;
+        max-width: 100%;
+    }
 }
