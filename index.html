@@ -18,7 +18,9 @@
         <link rel="stylesheet" href="style.css" />
         <title>Armando Andreani</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="script.js" defer></script>
     </head>
+
     <body>
         <heading horizontal center gap-1>
             <img
@@ -146,10 +148,7 @@
                     fill="#000000"
                 ></path>
             </svg>
-            <description horizontal center w-full h-auto gap-1>
-                Hello. I'm a 18 y.r old guy studying Computer Science. <br />I
-                love reading books and I like photography.
-            </description>
+            <description horizontal center w-full h-auto gap-1> </description>
         </about-me>
 
         <projects-experience w-full horizontal h-auto gap-2>
@@ -247,4 +246,24 @@
             </projects>
         </projects-experience>
     </body>
+
+    <script>
+        const about_me = document.getElementsByTagName("description")[0];
+
+        const now = new Date();
+        const dob = new Date("March 25, 2007 19:30:00");
+        const monthDiff = now.getMonth() - dob.getMonth();
+
+        let age = new Date(now.getFullYear() - dob.getFullYear());
+
+        if (
+            monthDiff < 0 ||
+            (monthDiff === 0 && now.getDate() < dob.getDate())
+        ) {
+            age--;
+        }
+
+        about_me.innerHTML = `Hello. I'm a ${age} y.r old guy studying Computer Science. <br />I
+                   love reading books and I like photography.`;
+    </script>
 </html>
