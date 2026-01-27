@@ -248,10 +248,14 @@
                 </project-placeholder>
             </projects>
         </projects-experience>
+        <footer>
+            <copyright></copyright>
+        </footer>
     </body>
 
     <script>
         const about_me = document.getElementsByTagName("description")[0];
+        const copyright = document.getElementsByTagName("copyright")[0];
 
         const now = new Date();
         const dob = new Date("March 25, 2007 19:30:00");
@@ -268,5 +272,6 @@
 
         about_me.innerHTML = `Hello. I'm a ${age} y.r old guy studying Computer Science. <br />I
                    love reading books and I like photography.`;
+        copyright.innerHTML = `Armando Andreani © ${now.getFullYear()}`;
     </script>
 </html>
