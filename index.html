@@ -272,11 +272,9 @@
         const now = new Date();
         const dob = new Date("March 25, 2007 19:30:00");
 
-        // Calculate age as a simple number
         let age = now.getFullYear() - dob.getFullYear();
         const monthDiff = now.getMonth() - dob.getMonth();
 
-        // Adjust if birthday hasn't happened yet this year
         if (
             monthDiff < 0 ||
             (monthDiff === 0 && now.getDate() < dob.getDate())
