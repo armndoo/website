@@ -6,7 +6,7 @@
             rel="icon"
             type="image/ico"
             sizes="32x32"
-            href="./assets/eyes.ico"
+            href="./assets/mask.ico"
         />
         <link
             rel="icon"
@@ -16,15 +16,14 @@
         />
         <link rel="apple-touch-icon" sizes="180x180" href="./assets/eyes.ico" />
         <link rel="stylesheet" href="style.css" />
-        <title>Armando Andreani</title>
+        <title>[~] Armando Andreani</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="script.js" defer></script>
     </head>
 
     <body>
         <heading horizontal center gap-1>
             <img
-                src="./assets/telegram_pfp.webp"
+                src="./assets/telegram_pfp_11zon.webp"
                 alt="My Profile Picture"
                 h-auto
                 rounded
@@ -148,7 +147,23 @@
                     fill="#000000"
                 ></path>
             </svg>
-            <description horizontal center w-full h-auto gap-1> </description>
+            <description vertical center w-full h-auto gap-1>
+                <div class="about-text">
+                    Hello! I'm a <span id="age"></span> y.r old guy studying
+                    Computer Science. <br />
+                    I love reading books and I like photography.
+                </div>
+
+                <div class="contact-info">
+                    You can contact me on:
+                    <a
+                        font-bold
+                        href="mailto:armando.andreani07@gmail.com"
+                        target="_blank"
+                        >armando.andreani07@gmail.com</a
+                    >
+                </div>
+            </description>
         </about-me>
 
         <projects-experience w-full horizontal h-auto gap-2>
@@ -221,7 +236,6 @@
                         xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink"
                     >
-                        <title>project</title>
                         <g
                             id="Page-1"
                             stroke="none"
@@ -245,17 +259,24 @@
                 </project-placeholder>
             </projects>
         </projects-experience>
+        <footer>
+            <copyright></copyright>
+        </footer>
     </body>
 
     <script>
         const about_me = document.getElementsByTagName("description")[0];
+        const age_html = document.getElementById("age");
+        const copyright = document.getElementsByTagName("copyright")[0];
 
         const now = new Date();
         const dob = new Date("March 25, 2007 19:30:00");
+
+        // Calculate age as a simple number
+        let age = now.getFullYear() - dob.getFullYear();
         const monthDiff = now.getMonth() - dob.getMonth();
 
-        let age = new Date(now.getFullYear() - dob.getFullYear());
-
+        // Adjust if birthday hasn't happened yet this year
         if (
             monthDiff < 0 ||
             (monthDiff === 0 && now.getDate() < dob.getDate())
@@ -263,7 +284,12 @@
             age--;
         }
 
-        about_me.innerHTML = `Hello. I'm a ${age} y.r old guy studying Computer Science. <br />I
-                   love reading books and I like photography.`;
+        if (age_html) {
+            age_html.innerText = age;
+        }
+
+        if (copyright) {
+            copyright.innerHTML = `Armando Andreani © ${now.getFullYear()}`;
+        }
     </script>
 </html>
