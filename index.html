@@ -6,7 +6,7 @@
             rel="icon"
             type="image/ico"
             sizes="32x32"
-            href="./assets/eyes.ico"
+            href="./assets/mask.ico"
         />
         <link
             rel="icon"
@@ -16,7 +16,7 @@
         />
         <link rel="apple-touch-icon" sizes="180x180" href="./assets/eyes.ico" />
         <link rel="stylesheet" href="style.css" />
-        <title>Armando Andreani</title>
+        <title>[~] Armando Andreani</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="script.js" defer></script>
     </head>
@@ -148,9 +148,19 @@
                     fill="#000000"
                 ></path>
             </svg>
-            <description horizontal center w-full h-auto gap-1>
-                Hello! I'm a 18 y.r old guy studying Computer Science. <br />I
-                love reading books and I like photography.
+            <description vertical center w-full h-auto gap-1>
+                <div class="about-text">
+                    Hello! I'm a <span id="age"></span> y.r old guy studying
+                    Computer Science. <br />
+                    I love reading books and I like photography.
+                </div>
+
+                <div class="contact-info">
+                    You can contact me on:
+                    <a font-bold href="mailto:armando.andreani07@gmail.com"
+                        >armando.andreani07@gmail.com</a
+                    >
+                </div>
             </description>
         </about-me>
 
@@ -224,7 +234,6 @@
                         xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink"
                     >
-                        <title>project</title>
                         <g
                             id="Page-1"
                             stroke="none"
@@ -254,14 +263,16 @@
     </body>
 
     <script>
-        const about_me = document.getElementsByTagName("description")[0];
+        // 1. Corrected function name (getElementById)
+        const age_html = document.getElementById("age");
         const copyright = document.getElementsByTagName("copyright")[0];
 
         const now = new Date();
         const dob = new Date("March 25, 2007 19:30:00");
-        const monthDiff = now.getMonth() - dob.getMonth();
 
-        let age = new Date(now.getFullYear() - dob.getFullYear());
+        // 2. Simplified age calculation logic
+        let age = now.getFullYear() - dob.getFullYear();
+        const monthDiff = now.getMonth() - dob.getMonth();
 
         if (
             monthDiff < 0 ||
@@ -270,8 +281,11 @@
             age--;
         }
 
-        about_me.innerHTML = `Hello! I'm a ${age} y.r old guy studying Computer Science. <br />I
-                   love reading books and I like photography.`;
+        // 3. Inject just the number into the span
+        if (age_html) {
+            age_html.innerText = age;
+        }
+
         copyright.innerHTML = `Armando Andreani © ${now.getFullYear()}`;
     </script>
 </html>
