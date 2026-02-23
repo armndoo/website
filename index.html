@@ -1,293 +1,177 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link
-            rel="icon"
-            type="image/ico"
-            sizes="32x32"
-            href="./assets/mask.ico"
-        />
-        <link
-            rel="icon"
-            type="image/ico"
-            sizes="16x16"
-            href="./assets/eyes.ico"
-        />
-        <link rel="apple-touch-icon" sizes="180x180" href="./assets/eyes.ico" />
-        <link rel="stylesheet" href="style.css" />
-        <title>[~] Armando Andreani</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
 
-    <body>
-        <heading horizontal center gap-1>
-            <img
-                src="./assets/telegram_pfp_11zon.webp"
-                alt="My Profile Picture"
-                h-auto
-                rounded
-                class="profile-pic"
-            />
-            <header-content horizontal center gap-4>
-                <name-location vertical>
-                    <my-name font-bold heading3>Armando Andreani</my-name>
-                    <based-in horizontal center heading3>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="14"
-                            height="14"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-map-pin-icon lucide-map-pin"
-                        >
-                            <path
-                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
-                            />
-                            <circle cx="12" cy="10" r="3" />
-                        </svg>
-                        Amantea, Italy
-                    </based-in>
-                </name-location>
-                <socials>
-                    <ul horizontal gap-1>
-                        <li>
-                            <a
-                                href="https://www.github.com/armndoo"
-                                target="_blank"
-                                aria-label="GitHub Profile Link"
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="lucide lucide-github-icon lucide-github"
-                                >
-                                    <path
-                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
-                                    />
-                                    <path d="M9 18c-4.51 2-5-2-7-2" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://www.linkedin.com/in/armndoo/"
-                                target="_blank"
-                                aria-label="LinkedIn Profile Link"
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="lucide lucide-linkedin-icon lucide-linkedin"
-                                >
-                                    <path
-                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                                    />
-                                    <rect width="4" height="12" x="2" y="9" />
-                                    <circle cx="4" cy="4" r="2" />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </socials>
-            </header-content>
-        </heading>
-        <about-me center horizontal h-auto gap-1 class="surface">
-            <svg
-                width="35"
-                height="35"
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                aria-hidden="true"
-                role="img"
-                class="iconify iconify--emojione-monotone"
-                preserveAspectRatio="xMidYMid meet"
-            >
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/ico" sizes="32x32" href="./assets/mask.ico" />
+  <link rel="icon" type="image/ico" sizes="16x16" href="./assets/eyes.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/eyes.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <title>[~] Armando Andreani</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <heading horizontal center gap-1>
+    <img src="./assets/telegram_pfp_11zon.webp" alt="My Profile Picture" h-auto rounded class="profile-pic" />
+    <header-content horizontal center gap-4>
+      <name-location vertical>
+        <my-name font-bold heading3>Armando Andreani</my-name>
+        <based-in horizontal center heading3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-map-pin-icon lucide-map-pin">
+            <path
+              d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          Amantea, Italy
+        </based-in>
+      </name-location>
+      <socials>
+        <ul horizontal gap-1>
+          <li>
+            <a href="https://www.github.com/armndoo" target="_blank" aria-label="GitHub Profile Link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-github-icon lucide-github">
                 <path
-                    d="M5.946 30.785c-2.999 7.189 2.213 15.866 9.784 17.387c-5.9-3.962-9.584-10.327-9.784-17.387"
-                    fill="#000000"
-                ></path>
-                <path
-                    d="M15.73 48.172l-.184-.039c.023.006.078.015.184.039"
-                    fill="#000000"
-                ></path>
-                <path
-                    d="M2 44.261c.489 6.02 8.039 9.878 13.457 7.412C9.879 50.475 6.179 49.378 2 44.261"
-                    fill="#000000"
-                ></path>
-                <path
-                    d="M46.504 22.794c3.512-7.168-1.475-16.036-9.055-17.963c5.799 4.233 9.239 10.824 9.055 17.963"
-                    fill="#000000"
-                ></path>
-                <path
-                    d="M48.865 17.848c4.192-3.709 2.502-11.088-2.332-13.49c2.33 4.565 3.151 8.421 2.332 13.49"
-                    fill="#000000"
-                ></path>
-                <path
-                    d="M60.519 14.345a5.43 5.43 0 0 0-3.303-1.116c-7.206 0-8.498 9.386-10.097 13.05c0 0-7.389-15.469-9.959-20.573c-2.65-5.265-8.307-4.177-9.964-1.311C23.26.316 15.823 3.609 16.771 8.568c-5.104-.392-7.167 4.643-6.034 7.871c-3.945-.122-5.789 4.757-4.455 8.25c.069.182 7.073 13.966 8.959 18.662c.219.545.44 1.128.672 1.742c1.525 4.032 3.614 9.554 8.84 13.989C27.003 60.991 30.118 62 33.764 62c6.426 0 13.581-3.189 18.229-8.126c4.163-4.421 6.158-9.848 5.77-15.695c-.348-5.256 1.324-10.208 2.667-14.188c1.457-4.319 2.607-7.731.089-9.646m-5.947 23.66c.813 11.628-10.842 21.439-20.73 21.439c-3.021 0-6.15-.488-8.105-2.147c-5.606-4.758-7.013-10.646-8.638-14.684c-1.941-4.831-6.705-14.114-9.014-18.784c-.945-1.912.634-5.981 3.384-5.981L19.4 34.716l3.005 1.804s-6.882-14.998-9.061-20.167c-1.272-3.018.92-6.662 3.874-6.187l9.846 21.016l3.006 1.808L18.594 8.757c-.046-4.295 5.831-4.362 7.197-1.854c3.457 6.348 9.947 20.279 9.947 20.279l3.004 1.807L27.969 6.146c2.104-2.754 5.816-2.368 7.416.975c1.922 4.015 10.061 21.454 10.061 21.454c-8.035 3.012-13.52 11.743-7.777 20.35c-4.557-9.41 3.516-16.06 8.285-18.258c1.805-.833 2.469-2.408 2.469-2.408l-.004.001c.629-1.139.592-2.662 1.342-5.127c1.625-5.335 3.854-8.162 7.125-8.162c.754 0 1.704.564 2.14 1.207c2.203 3.251-5.21 11.023-4.454 21.827"
-                    fill="#000000"
-                ></path>
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/armndoo/" target="_blank" aria-label="LinkedIn Profile Link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-linkedin-icon lucide-linkedin">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </socials>
+    </header-content>
+  </heading>
+  <about-me center horizontal h-auto gap-1 class="surface">
+    <svg width="35" height="35" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+      class="iconify iconify--emojione-monotone" preserveAspectRatio="xMidYMid meet">
+      <path d="M5.946 30.785c-2.999 7.189 2.213 15.866 9.784 17.387c-5.9-3.962-9.584-10.327-9.784-17.387"
+        fill="#000000"></path>
+      <path d="M15.73 48.172l-.184-.039c.023.006.078.015.184.039" fill="#000000"></path>
+      <path d="M2 44.261c.489 6.02 8.039 9.878 13.457 7.412C9.879 50.475 6.179 49.378 2 44.261" fill="#000000"></path>
+      <path d="M46.504 22.794c3.512-7.168-1.475-16.036-9.055-17.963c5.799 4.233 9.239 10.824 9.055 17.963"
+        fill="#000000"></path>
+      <path d="M48.865 17.848c4.192-3.709 2.502-11.088-2.332-13.49c2.33 4.565 3.151 8.421 2.332 13.49" fill="#000000">
+      </path>
+      <path
+        d="M60.519 14.345a5.43 5.43 0 0 0-3.303-1.116c-7.206 0-8.498 9.386-10.097 13.05c0 0-7.389-15.469-9.959-20.573c-2.65-5.265-8.307-4.177-9.964-1.311C23.26.316 15.823 3.609 16.771 8.568c-5.104-.392-7.167 4.643-6.034 7.871c-3.945-.122-5.789 4.757-4.455 8.25c.069.182 7.073 13.966 8.959 18.662c.219.545.44 1.128.672 1.742c1.525 4.032 3.614 9.554 8.84 13.989C27.003 60.991 30.118 62 33.764 62c6.426 0 13.581-3.189 18.229-8.126c4.163-4.421 6.158-9.848 5.77-15.695c-.348-5.256 1.324-10.208 2.667-14.188c1.457-4.319 2.607-7.731.089-9.646m-5.947 23.66c.813 11.628-10.842 21.439-20.73 21.439c-3.021 0-6.15-.488-8.105-2.147c-5.606-4.758-7.013-10.646-8.638-14.684c-1.941-4.831-6.705-14.114-9.014-18.784c-.945-1.912.634-5.981 3.384-5.981L19.4 34.716l3.005 1.804s-6.882-14.998-9.061-20.167c-1.272-3.018.92-6.662 3.874-6.187l9.846 21.016l3.006 1.808L18.594 8.757c-.046-4.295 5.831-4.362 7.197-1.854c3.457 6.348 9.947 20.279 9.947 20.279l3.004 1.807L27.969 6.146c2.104-2.754 5.816-2.368 7.416.975c1.922 4.015 10.061 21.454 10.061 21.454c-8.035 3.012-13.52 11.743-7.777 20.35c-4.557-9.41 3.516-16.06 8.285-18.258c1.805-.833 2.469-2.408 2.469-2.408l-.004.001c.629-1.139.592-2.662 1.342-5.127c1.625-5.335 3.854-8.162 7.125-8.162c.754 0 1.704.564 2.14 1.207c2.203 3.251-5.21 11.023-4.454 21.827"
+        fill="#000000"></path>
+    </svg>
+    <description vertical center w-full h-auto gap-1>
+      <div class="about-text">
+        Hello! I'm a <span id="age"></span> y.r old guy studying
+        Computer Science. <br />
+        I love reading books and I like photography.
+      </div>
+
+      <div class="contact-info">
+        You can contact me on:
+        <a font-bold href="mailto:armando.andreani07@gmail.com" target="_blank">armando.andreani07@gmail.com</a>
+      </div>
+    </description>
+  </about-me>
+
+  <projects-experience w-full horizontal h-auto gap-2>
+    <experience vertical class="surface">
+      <heading-experience font-regular><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" class="lucide lucide-briefcase">
+          <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+          <rect width="20" height="14" x="2" y="6" rx="2" />
+        </svg>
+        My experience</heading-experience>
+      <minecraft-italia vertical>
+        <heading-mcita heading3>
+          <a href="https://www.minecraft-italia.net" target="_blank" horizontal gap-05 font-semibold><svg
+              xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-link-icon lucide-link">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+            </svg>Minecraft-Italia.net</a></heading-mcita>
+        <years-mcita heading4 font-light>2022-2024</years-mcita>
+        <roles-mcita heading3 font-semibold>HR - Project Management</roles-mcita>
+        <desc-mcita>Managed the hiring and onboarding process of the new
+          team members. Helped on managing some of the
+          projects.</desc-mcita>
+      </minecraft-italia>
+    </experience>
+    <projects vertical class="surface">
+      <heading-projects><svg width="25" height="25" viewBox="0 0 512 512" version="1.1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Combined-Shape" fill="#000000" transform="translate(64.000000, 34.346667)">
+              <path
+                d="M192,7.10542736e-15 L384,110.851252 L384,332.553755 L192,443.405007 L1.42108547e-14,332.553755 L1.42108547e-14,110.851252 L192,7.10542736e-15 Z M42.666,157.654 L42.6666667,307.920144 L170.666,381.82 L170.666,231.555 L42.666,157.654 Z M341.333,157.655 L213.333,231.555 L213.333,381.82 L341.333333,307.920144 L341.333,157.655 Z M192,49.267223 L66.1333333,121.936377 L192,194.605531 L317.866667,121.936377 L192,49.267223 Z">
+              </path>
+            </g>
+          </g>
+        </svg>My Personal Projects</heading-projects>
+
+      <mando-shell vertical class="surface project-card">
+        <heading-msh font-bold horizontal center gap-05>
+          <a href="https://github.com/armndoo/msh" target="_blank" horizontal gap-05 font-semibold>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-link-icon lucide-link">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
             </svg>
-            <description vertical center w-full h-auto gap-1>
-                <div class="about-text">
-                    Hello! I'm a <span id="age"></span> y.r old guy studying
-                    Computer Science. <br />
-                    I love reading books and I like photography.
-                </div>
+            Mando Shell
+          </a>
+        </heading-msh>
 
-                <div class="contact-info">
-                    You can contact me on:
-                    <a
-                        font-bold
-                        href="mailto:armando.andreani07@gmail.com"
-                        target="_blank"
-                        >armando.andreani07@gmail.com</a
-                    >
-                </div>
-            </description>
-        </about-me>
+        <desc-msh>
+          Custom Unix shell implementation. </desc-msh>
+      </mando-shell>
+    </projects>
 
-        <projects-experience w-full horizontal h-auto gap-2>
-            <experience vertical class="surface">
-                <heading-experience font-regular
-                    ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="25"
-                        height="25"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-briefcase"
-                    >
-                        <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-                        <rect width="20" height="14" x="2" y="6" rx="2" />
-                    </svg>
-                    My experience</heading-experience
-                >
-                <minecraft-italia vertical>
-                    <heading-mcita heading3>
-                        <a
-                            href="https://www.minecraft-italia.net"
-                            target="_blank"
-                            horizontal
-                            gap-05
-                            font-semibold
-                            ><svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="15"
-                                height="15"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-link-icon lucide-link"
-                            >
-                                <path
-                                    d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
-                                />
-                                <path
-                                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
-                                /></svg
-                            >Minecraft-Italia.net</a
-                        ></heading-mcita
-                    >
-                    <years-mcita heading4 font-light>2022-2024</years-mcita>
-                    <roles-mcita heading3 font-semibold
-                        >HR - Project Management</roles-mcita
-                    >
-                    <desc-mcita
-                        >Managed the hiring and onboarding process of the new
-                        team members. Helped on managing some of the
-                        projects.</desc-mcita
-                    >
-                </minecraft-italia>
-            </experience>
-            <projects vertical class="surface">
-                <heading-projects
-                    ><svg
-                        width="25"
-                        height="25"
-                        viewBox="0 0 512 512"
-                        version="1.1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                    >
-                        <g
-                            id="Page-1"
-                            stroke="none"
-                            stroke-width="1"
-                            fill="none"
-                            fill-rule="evenodd"
-                        >
-                            <g
-                                id="Combined-Shape"
-                                fill="#000000"
-                                transform="translate(64.000000, 34.346667)"
-                            >
-                                <path
-                                    d="M192,7.10542736e-15 L384,110.851252 L384,332.553755 L192,443.405007 L1.42108547e-14,332.553755 L1.42108547e-14,110.851252 L192,7.10542736e-15 Z M42.666,157.654 L42.6666667,307.920144 L170.666,381.82 L170.666,231.555 L42.666,157.654 Z M341.333,157.655 L213.333,231.555 L213.333,381.82 L341.333333,307.920144 L341.333,157.655 Z M192,49.267223 L66.1333333,121.936377 L192,194.605531 L317.866667,121.936377 L192,49.267223 Z"
-                                ></path>
-                            </g>
-                        </g></svg
-                    >My Personal Projects</heading-projects
-                ><project-placeholder center left font-bold>
-                    Working something out.
-                </project-placeholder>
-            </projects>
-        </projects-experience>
-        <footer>
-            <copyright></copyright>
-        </footer>
-    </body>
+  </projects-experience>
+  <footer>
+    <copyright></copyright>
+  </footer>
+</body>
 
-    <script>
-        const about_me = document.getElementsByTagName("description")[0];
-        const age_html = document.getElementById("age");
-        const copyright = document.getElementsByTagName("copyright")[0];
+<script>
+  const about_me = document.getElementsByTagName("description")[0];
+  const age_html = document.getElementById("age");
+  const copyright = document.getElementsByTagName("copyright")[0];
 
-        const now = new Date();
-        const dob = new Date("March 25, 2007 19:30:00");
+  const now = new Date();
+  const dob = new Date("March 25, 2007 19:30:00");
 
-        let age = now.getFullYear() - dob.getFullYear();
-        const monthDiff = now.getMonth() - dob.getMonth();
+  let age = now.getFullYear() - dob.getFullYear();
+  const monthDiff = now.getMonth() - dob.getMonth();
 
-        if (
-            monthDiff < 0 ||
-            (monthDiff === 0 && now.getDate() < dob.getDate())
-        ) {
-            age--;
-        }
+  if (
+    monthDiff < 0 ||
+    (monthDiff === 0 && now.getDate() < dob.getDate())
+  ) {
+    age--;
+  }
 
-        if (age_html) {
-            age_html.innerText = age;
-        }
+  if (age_html) {
+    age_html.innerText = age;
+  }
 
-        if (copyright) {
-            copyright.innerHTML = `Armando Andreani © ${now.getFullYear()}`;
-        }
-    </script>
+  if (copyright) {
+    copyright.innerHTML = `Armando Andreani © ${now.getFullYear()}`;
+  }
+</script>
+
 </html>
