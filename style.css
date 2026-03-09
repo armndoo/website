@@ -210,13 +210,6 @@ a:hover {
   height: 3rem;
 }
 
-.divider {
-  align-self: stretch;
-  width: 1px;
-  opacity: 0.3;
-  background-color: black;
-}
-
 about-me,
 projects-experience {
   display: flex;
@@ -233,8 +226,16 @@ heading-projects {
   margin-bottom: 1rem;
 }
 
-roles-mcita {
-  margin-bottom: 1rem;
+roles-mcita,
+roles-spottly {
+  margin-bottom: 0.5rem;
+}
+
+divider {
+  width: inherit;
+  opacity: 0.3;
+  background-color: black;
+  height: 1px;
 }
 
 heading-experience svg {
@@ -255,7 +256,8 @@ heading-projects svg {
   vertical-align: middle;
 }
 
-desc-mcita {
+desc-mcita,
+desc-spottly {
   display: block;
   width: 30ch;
 }
@@ -269,14 +271,33 @@ desc-mcita {
 }
 
 @media (max-width: 850px) {
+
   body {
-    width: 100%;
+    width: 100% !important;
+    max-width: 100vw;
+    padding: 10px;
     box-sizing: border-box;
-    padding: 20px;
   }
 
-  *[horizontal] {
-    flex-wrap: wrap;
+  projects-experience[horizontal] {
+    flex-direction: column !important;
+    width: 100% !important;
+    align-items: center;
+  }
+
+  about-me,
+  projects-experience,
+  experience,
+  projects {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .surface {
+    width: 100% !important;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 0px #000;
   }
 
   *[w-10],
@@ -287,21 +308,24 @@ desc-mcita {
   *[w-60],
   *[w-70],
   *[w-80],
-  *[w-90] {
-    width: 100%;
-    max-width: 100%;
+  *[w-90],
+  *[w-full] {
+    width: 100% !important;
   }
 
-  about-me,
-  projects-experience,
-  .surface {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
+  desc-mcita,
+  desc-spottly {
+    width: 100% !important;
   }
 
-  desc-mcita {
-    width: 100%;
-    max-width: 100%;
+  heading[horizontal] {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  header-content[horizontal] {
+    flex-direction: column !important;
+    gap: 1rem;
   }
 }
