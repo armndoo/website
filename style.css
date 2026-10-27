@@ -24,7 +24,7 @@ body {
 }
 
 img {
-  object-fit: contain;
+  object-fit: cover;
   display: block;
 }
 
@@ -266,7 +266,8 @@ heading-education svg {
 }
 
 roles-mcita,
-roles-spottly {
+roles-spottly,
+roles-noistd {
   margin-bottom: 0.5rem;
 }
 
