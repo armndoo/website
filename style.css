@@ -317,7 +317,7 @@ footer {
     box-sizing: border-box;
   }
 
-  projects-experience[horizontal] {
+  center-body[horizontal] {
     flex-direction: column !important;
     width: 100% !important;
     align-items: center;
@@ -325,7 +325,7 @@ footer {
   }
 
   about-me,
-  projects-experience,
+  center-body,
   education,
   experience,
   projects {
